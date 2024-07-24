@@ -1,0 +1,7 @@
+<h1>Catalog Page</h1>
+<p>Catalog </p>
+<ul>
+    {{#each parts}}
+    <li><a href="/catalog/{{id}}">{{name}} - ${{price}}</a></li>
+    {{/each }}
+</ul>

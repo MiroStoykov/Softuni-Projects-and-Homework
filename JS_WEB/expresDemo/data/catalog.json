@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Engine",
+        "description": "The engine is the main part of the car that produces power.",
+        "price": 2500
+    },
+    {
+        "id": 2,
+        "name": "Transmission",
+        "description": "The transmission is a system that transmits power from the engine to the wheels.",
+        "price": 1500
+    },
+    {
+        "id": 3,
+        "name": "Brakes",
+        "description": "Brakes are used to slow down or stop the car.",
+        "price": 300
+    },
+    {
+        "id": 4,
+        "name": "Steering Wheel",
+        "description": "The steering wheel allows the driver to control the direction of the car.",
+        "price": 100
+    },
+    {
+        "id": 5,
+        "name": "Tires",
+        "description": "Tires provide traction between the car and the road surface.",
+        "price": 400
+    }
+]
