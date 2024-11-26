@@ -18,6 +18,17 @@ main {
     padding-bottom: 5em;
 }
 
+.error label,
+.error select {
+    color: red !important;
+}
+
+.error input.inputFields,
+.error textarea.inputFields,
+.error select {
+    border-color: red !important;
+}
+
 body {
     background-color: #FFB4A2;
     background-position: 20% 82%;
@@ -33,7 +44,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
-    
+
 }
 
 nav,

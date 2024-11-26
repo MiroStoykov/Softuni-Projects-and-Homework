@@ -3,7 +3,6 @@
     <div class="main_card">
         <div class="card_left">
             <div class="card_datails">
-
                 <h1>{{title}}</h1>
                 <div class="card-movie">
                     <div class="first-info">
@@ -14,9 +13,7 @@
                         <p class="card-year">Year: {{year}}</p>
                         <p class="card-ranking">Rating: <span id="stars">{{{starRating}}}</span></p>
                     </div>
-
                 </div>
-
                 <p class="disc">Description: {{description}}</p>
             </div>
         </div>
@@ -24,5 +21,9 @@
             <img src="{{imageURL}}" alt="image">
         </div>
     </div>
+    {{/with}}
+    {{#with cast}}
+    <div class="main-cast-card">
+        {{>cast}} </div>
     {{/with}}
 </section>

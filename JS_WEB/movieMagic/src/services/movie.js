@@ -2,13 +2,11 @@ const { Movie } = require("../models/Movie");
 
 async function getAllMovies() {
     const movies = await Movie.find().lean();
-    console.log(movies);
     return movies;
 }
 
 async function getMovieById(id) {
-    const movie = await Movie.findById(id).lean();
-    return movie;
+    return Movie.findById(id);
 }
 
 async function createMovie(movieData) {
@@ -27,9 +25,15 @@ async function createMovie(movieData) {
     return movie;
 }
 
+async function attachCastToMovvie(movie, castId) {
+    movie.cast.push(castId);
+    await movie.save;
+}
+
 
 module.exports = {
     getAllMovies,
     getMovieById,
-    createMovie
+    createMovie,
+    attachCastToMovvie
 }
